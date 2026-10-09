@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Folio",
+    "slug": "folio-popup-book",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#120d1f",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.giabaojs.folio",
+      "infoPlist": {
+        "UIStatusBarHidden": true,
+        "UIViewControllerBasedStatusBarAppearance": false,
+        "CADisableMinimumFrameDurationOnPhone": true
+      }
+    },
+    "plugins": [
+      "react-native-webgpu",
+      "./plugins/withSceneLifecycle",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#120d1f",
+          "imageWidth": 1
+        }
+      ]
+    ],
+    "platforms": [
+      "ios"
+    ],
+    "icon": "./assets/icon.png"
+  }
+}

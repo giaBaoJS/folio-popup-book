@@ -1,0 +1,9 @@
+{
+  "name": "folio-hinge",
+  "version": "1.0.0",
+  "description": "Hinge angle and status for foldable iPhones (UIHingeInteraction)",
+  "main": "index.ts",
+  "license": "MIT",
+  "author": "Bao Nguyen",
+  "homepage": "https://github.com/giaBaoJS/folio-popup-book"
+}

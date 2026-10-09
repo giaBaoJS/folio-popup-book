@@ -1,0 +1,42 @@
+{
+  "name": "folio-popup-book",
+  "version": "1.0.0",
+  "description": "A pop-up storybook for the iPhone Duo: paper dioramas rendered with WebGPU and Skia on one shared Dawn device, opening with the phone's hinge.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giaBaoJS/folio-popup-book"
+  },
+  "license": "MIT",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "headless": "bun build tools/headless.ts --target=node --external webgpu --external canvaskit-wasm --outfile .headless/headless.mjs && node .headless/headless.mjs",
+    "scenes": "blender -b -P tools/blender/build.py --",
+    "sounds": "python3 tools/synth.py"
+  },
+  "dependencies": {
+    "expo": "~57.0.27",
+    "expo-audio": "~57.0.5",
+    "expo-haptics": "~57.0.3",
+    "expo-splash-screen": "~57.0.9",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-gesture-handler": "~2.32.0",
+    "react-native-reanimated": "4.7.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-skia": "3.1.0",
+    "react-native-webgpu": "0.13.0",
+    "react-native-worklets": "0.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "@webgpu/types": "^0.1.74",
+    "canvaskit-wasm": "0.41.0",
+    "typescript": "~6.0.3",
+    "webgpu": "^0.6.2"
+  }
+}

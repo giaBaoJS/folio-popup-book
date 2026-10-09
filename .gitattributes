@@ -1,0 +1,14 @@
+# Generated scene meshes (tools/blender/build.py): base64 vertex data, not for review.
+src/assets/scenes/*.ts linguist-generated=true -diff
+
+# Audio and media
+*.wav binary
+*.mp3 binary
+*.m4a binary
+*.mp4 binary
+*.mov binary
+*.gif binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
